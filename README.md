@@ -35,7 +35,15 @@ Configure your `Homestead.yaml` file then install the instance:
 $ vagrant up --provision
 ```
 
-Run WebSockets server:
+## Seeders
+
+You can run the seeders that will create two users: `user1@test.com` and `user2@test.com`, both ones having `password` as password:
+
+```bash
+$ php artisan migrate --seed
+```
+
+## Starting the WebSockets server
 
 ```bash
 $ php artisan websockets:serve
