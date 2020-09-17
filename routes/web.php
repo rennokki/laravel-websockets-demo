@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth:sanctum', 'verified'])->get('/', function () {
     return Inertia\Inertia::render('Dashboard');
 })->name('dashboard');
+
+Route::post('/send-message', [App\Http\Controllers\ChatController::class, 'send'])
+    ->name('send.message')
+    ->middleware('auth');
