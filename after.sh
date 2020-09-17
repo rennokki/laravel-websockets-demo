@@ -26,3 +26,4 @@
 #sudo apt-get install -y nodejs
 
 sudo ufw allow 6001
+sudo systemctl start redis-server.service
