@@ -9,7 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3",
-        "beyondcode/laravel-websockets": "2.0.0-beta.21",
+        "beyondcode/laravel-websockets": "2.0.0-beta.22",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",

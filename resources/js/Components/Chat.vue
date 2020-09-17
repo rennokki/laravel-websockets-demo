@@ -2,9 +2,6 @@
     <div class="p-6 flex flex-row">
         <div class="w-1/4 flex flex-col">
             <ul class="overflow-y-auto h-full mr-3 border rounded-lg p-2">
-                <li class="font-bold">
-                    {{ $page.user.name }}
-                </li>
                 <li
                     v-for="user in users"
                     :key="user.id"
@@ -24,9 +21,7 @@
                         v-for="(message, index) in messages"
                         :key="index"
                     >
-                        <span :class="{
-                            'font-bold': message.user.name === 'Me'
-                        }">
+                        <span :class="{ 'font-bold': message.user.id === $page.user.id }">
                             {{ message.user.name }}:
                         </span>
                         {{ message.message }}
